@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Practica de Metodos Numericos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <label>Metodos Numericos </label>
+    <div class="enter_numbers">
+      <label>Ingrese el valor de X: </label>
+      <input type="text" id="numberX" /><br /><br />
+      <label>Ingrese el valor de X cero: </label>
+      <input type="text" id="numberXcero" /><br /><br />
+      <label>Ingrese el valor de X uno: </label>
+      <input type="text" id="numberXuno" /><br /><br />
+      <label>Ingrese el valor de X dos : </label>
+      <input type="text" id="numberXdos" /><br /><br />
+      <label>Ingrese el valor de F(x) cero : </label>
+      <input type="text" id="numberFx0" /><br /><br />
+      <label>Ingrese el valor de F(x) uno : </label>
+      <input type="text" id="numberFx1" /><br /><br />
+      <label>Ingrese el valor de F(x) dos : </label>
+      <input type="text" id="numberFx2" /><br /><br />
+
+      <select class="selec" id="operators">
+        <option value="interLineal">Interpolación Lineal</option>
+        <option value="interCuadratica">Interpolación Cuadrática</option>
+        <option value="lagrange1">Lagrange 1er Orden</option>
+        <option value="lagrange2">Lagrange 2do Orden</option>
+      </select>
+
+      <hr />
+      <button onclick="interpolacion()">Calcular Resultado:</button>
+      <input class="final_result" type="text" id="result" />
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
