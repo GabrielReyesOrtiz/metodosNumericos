@@ -16,11 +16,10 @@ function interpolacion() {
   if (operation === "interLineal") {
     if (fx === null) {
       i1 = fx0 + ((fx1 - fx0) / (xuno - xcero)) * (x - xcero);
-      document.getElementById("result").value = i1.toFixed(3);
-      document.getElementById("perror").value = "No ingresó F(x)";
+      document.getElementById("result").value = i1.toFixed(5);
     } else {
       i1 = fx0 + ((fx1 - fx0) / (xuno - xcero)) * (x - xcero);
-      document.getElementById("result").value = i1.toFixed(3);
+      document.getElementById("result").value = i1.toFixed(5);
       document.getElementById("perror").value = (
         ((fx - i1) / fx) *
         100
@@ -33,14 +32,13 @@ function interpolacion() {
       let b1 = (fx1 - fx0) / (xuno - xcero);
       let b2 = ((fx2 - fx1) / (xdos - xuno) - b1) / (xdos - xcero);
       i1 = b0 + b1 * (x - xcero) + b2 * ((x - xcero) * (x - xuno));
-      document.getElementById("result").value = i1.toFixed(3);
-      document.getElementById("perror").value = "No ingresó F(x)";
+      document.getElementById("result").value = i1.toFixed(5);
     } else {
       let b0 = fx0;
       let b1 = (fx1 - fx0) / (xuno - xcero);
       let b2 = ((fx2 - fx1) / (xdos - xuno) - b1) / (xdos - xcero);
       i1 = b0 + b1 * (x - xcero) + b2 * ((x - xcero) * (x - xuno));
-      document.getElementById("result").value = i1.toFixed(3);
+      document.getElementById("result").value = i1.toFixed(5);
       document.getElementById("perror").value = (
         ((fx - i1) / fx) *
         100
@@ -53,17 +51,16 @@ function interpolacion() {
       i1 =
         ((x - xuno) / (xcero - xuno)) * fx0 +
         ((x - xcero) / (xuno - xcero)) * fx1;
-      document.getElementById("result").value = i1.toFixed(3);
-      document.getElementById("perror").value = "No ingresó F(x)";
+      document.getElementById("result").value = i1.toFixed(5);
     } else {
       i1 =
         ((x - xuno) / (xcero - xuno)) * fx0 +
         ((x - xcero) / (xuno - xcero)) * fx1;
-      document.getElementById("result").value = i1.toFixed(3);
+      document.getElementById("result").value = i1.toFixed(5);
       document.getElementById("perror").value = (
         ((fx - i1) / fx) *
         100
-      ).toFixed(3);
+      ).toFixed(5);
     }
   }
 
@@ -73,17 +70,17 @@ function interpolacion() {
         ((x - xuno) / (xcero - xuno)) * ((x - xdos) / (xcero - xdos)) * fx0 +
         ((x - xcero) / (xuno - xcero)) * ((x - xdos) / (xuno - xdos)) * fx1 +
         ((x - xcero) / (xdos - xcero)) * ((x - xuno) / (xdos - xuno)) * fx2;
-      document.getElementById("result").value = i1.toFixed(3);
+      document.getElementById("result").value = i1.toFixed(5);
     } else {
       i1 =
         ((x - xuno) / (xcero - xuno)) * ((x - xdos) / (xcero - xdos)) * fx0 +
         ((x - xcero) / (xuno - xcero)) * ((x - xdos) / (xuno - xdos)) * fx1 +
         ((x - xcero) / (xdos - xcero)) * ((x - xuno) / (xdos - xuno)) * fx2;
-      document.getElementById("result").value = i1.toFixed(3);
+      document.getElementById("result").value = i1.toFixed(5);
       document.getElementById("perror").value = (
         ((fx - i1) / fx) *
         100
-      ).toFixed(3);
+      ).toFixed(5);
     }
   }
 }
