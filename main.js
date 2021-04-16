@@ -23,7 +23,7 @@ function interpolacion() {
       document.getElementById("perror").value = (
         ((fx - i1) / fx) *
         100
-      ).toFixed(3);
+      ).toFixed(5);
     }
   }
   if (operation === "interCuadratica") {
@@ -42,7 +42,7 @@ function interpolacion() {
       document.getElementById("perror").value = (
         ((fx - i1) / fx) *
         100
-      ).toFixed(3);
+      ).toFixed(5);
     }
   }
 
