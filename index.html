@@ -24,6 +24,8 @@
       <input type="text" id="numberFx1" /><br /><br />
       <label>Ingrese el valor de F(x) dos : </label>
       <input type="text" id="numberFx2" /><br /><br />
+      <label>Ingrese el valor de F(x) si lo tiene: </label>
+      <input type="text" id="fdex" /><br /><br />
 
       <select class="selec" id="operators">
         <option value="interLineal">Interpolación Lineal</option>
@@ -34,7 +36,9 @@
 
       <hr />
       <button onclick="interpolacion()">Calcular Resultado:</button>
-      <input class="final_result" type="text" id="result" />
+      <input class="final_result" type="text" id="result" /><br />
+      <label>Porcentaje de error: </label>
+      <input class="final_result" type="text" id="perror" />
     </div>
     <script src="main.js"></script>
   </body>

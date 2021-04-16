@@ -23,7 +23,7 @@ input:focus {
 .enter_numbers {
   box-sizing: border-box;
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 50%;
   color: white;
   transform: translate(-50%, -50%);
